@@ -29,3 +29,13 @@ next.addEventListener("click",function(){
     var nextImg=imgs[index].src
     lightbox.style.backgroundImage=`url("${nextImg}")`
 })
+
+prev.addEventListener("click",function(){
+    // index=;
+    index--;
+    if(index==0){
+        index=imgs.length
+    }
+    var nextImg=imgs[index].src
+    lightbox.style.backgroundImage=`url("${nextImg}")`
+})
