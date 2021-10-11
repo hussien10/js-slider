@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.items-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item{
+    width: 30%;
+    margin-bottom: 16px;
+}
+.item img{
+    width: 100%;
+}
+.lightbox-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 0;
+}
+.lightbox{
+    background-image: url("1.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px;
+}
+
+.fa-times-circle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+svg{
+    font-size: 20px;
+   
+}
